@@ -22,3 +22,138 @@ html{
 
 }
 
+main{
+    height: 100vh;
+    background-color: var(--Green-200-lighter);
+    
+}
+
+.form{
+    margin: auto;
+    
+    border-radius: 1em;
+    max-width: 600px;
+    background-color: white;
+    border: 1px solid;
+}
+.form-row{
+    display: flex;
+    justify-content: space-between;
+    
+    gap: 1em;
+}
+
+.form-group{
+    flex: 1;
+ 
+    display: flex;
+    flex-direction: column;
+    padding: .9em ;
+}
+.form-group label{
+    margin-bottom: .6em;
+  
+}
+
+.form-group input{
+    padding: 1em .5em;
+    border-radius: .6em;
+    border: none;
+    border: 1px solid;
+}
+.radio-group{
+   
+    border: 1px solid;
+    flex: 1;
+    padding: 1em;
+    border-radius: 1em;
+ 
+    
+    
+   
+}
+.form-group-radio{
+    display: flex;
+    flex: 1;
+    gap: 1em;
+    justify-content: space-between;
+}
+
+#message{
+    border-radius: 1em;
+}
+
+.form-checkbox #consent{
+    margin-right: 1em;
+}
+.submit{
+    display: flex;
+}
+.submit button{
+    padding: .8em 1em;
+    margin: 1.3em auto;
+    font-size: 1rem;
+    width: 85%;
+    background-color: var(--Green-600-medium);
+    border-radius: .7em;
+    color: white;
+    border: none;
+}
+
+// form{
+//     width: 100%;
+//     max-width: 760px;
+//     margin: auto;
+//     padding: 1em;
+//     border: 1px solid;
+// }
+// fieldset{
+//     border: 2px dashed red;
+// }
+//  .form-group{
+   
+//     margin: .8em 1em;
+//     padding: .5em;
+//     width: 100%;
+//     padding-right: 2em;
+    
+// }
+
+// .form-row{
+//     display: flex;
+// }
+
+// main form fieldset .form-group input{
+//     margin-top: .6em;
+//     width: 100%;
+//     padding: 1.1em;
+//     border: none;
+//     border-radius: 1em;
+// }
+// .form-radio{
+//     display: flex;
+//     margin: 2em auto;
+//     justify-content: space-between;
+// }
+
+// .radio-group{
+//     margin-left: 3em;
+//     border-radius: .8em;
+//     border: 1px solid;
+//     padding: 1em 3em;
+// }
+
+// .form-group-message{
+//     display: flex;
+//     flex-direction: column;
+// }
+// .form-group-message textarea{
+//     width: 100%;
+//     resize: vertical;
+  
+// }
+// .form-group-message{
+//     width: 100%;
+// }
+
+

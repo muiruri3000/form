@@ -22,74 +22,87 @@
 
   <h1>Contact Us</h1>   
 
-<form action="">
-
-  <fieldset>
-    <legend>Personal Information </legend>
+<form action="" class="form">
 
 
+   
 
-    <div class="block">
-      <label for="first-name">First Name:<span>*</span></label>
+
+    <div class="form-row">
+    <div class="form-group">
+
+      <label for="first-name">First Name:<span>*</span>
+      </label>
+      
       <input type="text" name="fname" id="fname" aria-describedby="first-name">
-    </div>
+</div>
 
     
-    <div class="block">
+<div class="form-group">
       <label for="last-name">Last Name:<span>*</span></label>
       <input type="text" name="lname" id="lname" aria-describedby="last-name">
     </div>
-
-    <div class="block">
-      <label for="email">First Name:<span>*</span></label>
-      <input type="text" name="email" id="email" aria-describedby="email">
     </div>
+  </div>
 
- </fieldset>
+  <div class="form-row">
+  <div class="form-group">
 
-<fieldset>
-  <div class="block">
-  <legend>Your Query </legend>
+
+        <label for="email">Email:<span>*</span></label>
+        <input type="text" name="email" id="email" aria-describedby="email">
+
+      </div>
+</div>
+
+
+
+ 
+
+
+  <div class="form-row">
+
+   <div class="form-group">
+  <div class="form-group-radio">
+    <div class="radio-group">
   <input type="radio" name="radio1" id="radio1">
   <label for="radio1">General Enquiry</label>
+</div>
 
 
-  <legend>Your Query </legend>
+<div class="radio-group">
   <input type="radio" name="radio2" id="radio2">
   <label for="radio2">Support Request</label>
 </div>
-</fieldset>
+</div>
+</div>
+</div>
 
 
+
+<div class="form-row">
+  <div class="form-group">
+ 
 <label for="message">Message *</label>
 
-<textarea name="message" id="message"></textarea>
-
+<textarea name="message" id="message" rows="4"></textarea>
+</div>
+</div>
+<div class="form-row">
+  <div class="form-group">
+    <div class="form-checkbox">
 <input type="checkbox" name="consent" id="consent">
 <label for="consent">I consent to being contacted by the team*</label>
+</div></div></div>
 
-
-<div class="submi">
+<div class="submit">
   <button role="submit">Submit</button>
 </div>
 </form>
 
 </main>
 
-  First Name
-  This field is required
-
-  Last Name
-  This field is required
-
-  Email Address
-  Please enter a valid email address
-  This field is required
-
-  Query Type
-  General Enquiry
-  Support Request
-  Please select a query type
+  <!-- Please select a query type
 
   Message
   This field is required
@@ -100,7 +113,7 @@
   Submit
 
   Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
+  Thanks for completing the form. We'll be in touch soon! -->
   
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
