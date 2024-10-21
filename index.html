@@ -20,10 +20,15 @@
 
   <main>
 
-  
 
 <form action="" class="form" novalidate>
 
+  <div class="messageAlert ">
+    <div class="tickImage"><img src="./assets/images/icon-success-check.svg" alt="success icon">
+    <h1>Message Sent!</h1>
+  </div>
+    <p>Thanks for completing the form. we'll be in touch soon</p>
+  </div>
   <h1>Contact Us</h1> 
    
 
@@ -36,14 +41,14 @@
       
       <input type="text" name="fname" id="fname" aria-describedby="first-name">
 
-      <span id="firstNameError"></span>
+      <span id="fnameError"></span>
     </div>
     
     
     <div class="form-group">
       <label for="last-name">Last Name: *</label>
       <input type="text" name="lname" id="lname" aria-describedby="last-name">
-      <span id="lastNameError"></span>
+      <span id="lnameError"></span>
     </div>
   </div>
 </div>
@@ -78,6 +83,7 @@
         <input type="radio" name="query" id="radio2" value="support-request">
         <label for="radio2">Support Request</label>
       </div>
+      
     </div>
     <span id="radioError"></span>
   </div>
@@ -91,16 +97,23 @@
     <label for="message">Message *</label>
     
     <textarea name="message" id="message" rows="4"></textarea>
-    <span id="radioError"></span>
+    <span id="textareaError"></span>
   </div>
 </div>
 <div class="form-row">
   <div class="form-group">
     <div class="form-checkbox">
-      <input type="checkbox" name="consent" id="consent" value ='yes'>
-      <label for="consent">I consent to being contacted by the team *</label>
+      <div>
+
+
+        <input type="checkbox" name="consent" id="consent" value ='yes'>
+      </div>
+      <div>
+
+        <label for="consent">I consent to being contacted by the team *</label>
+      </div>
     </div>
-    <span id="radioError"></span>
+    <span id="consentError"></span>
 
 </div></div>
 

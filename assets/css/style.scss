@@ -23,9 +23,9 @@ html{
 }
 
 main{
-    height: 100vh;
+   
     background-color: var(--Green-200-lighter);
-    padding: 3em;
+    padding: 2em;
     
 }
 
@@ -40,13 +40,13 @@ main{
 
 .form h1{
     
-    padding:.5em 0 .3em .5em;
+    padding:.3em 0 0 .3em;
 }
 .form-row{
     display: flex;
     justify-content: space-between;
     
-    gap: 1em;
+    
 }
 
 .form-group{
@@ -54,7 +54,7 @@ main{
  
     display: flex;
     flex-direction: column;
-    padding: .9em ;
+    padding: .5em ;
 }
 .form-group label{
     margin-bottom: .6em;
@@ -62,7 +62,7 @@ main{
 }
 
 .form-group input{
-    padding: 1em .5em;
+    padding: .7em .4em;
     border-radius: .6em;
     border: none;
     border: 1px solid;
@@ -71,7 +71,7 @@ main{
    
     border: 1px solid;
     flex: 1;
-    padding: 1em;
+    padding: .6em;
     border-radius: 1em;
  
     
@@ -81,12 +81,66 @@ main{
 .form-group-radio{
     display: flex;
     flex: 1;
-    gap: 1em;
+    gap: .5em;
     justify-content: space-between;
 }
 
 #message{
     border-radius: 1em;
+}
+.form-checkbox {
+ 
+    display: flex;
+  
+}
+input[type="radio"]{
+    opacity: 0;
+    position: absolute;
+}
+input[type="radio"] + label {
+    position: relative;
+    padding-left: 30px; 
+    cursor: pointer;
+    display: inline-block;
+    line-height: 20px;
+}
+
+
+input[type="radio"] + label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--Green-600-medium); 
+    border-radius: 50%;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+
+input[type="radio"]:checked + label::before {
+    background-color: #4CAF50; 
+    border-color: #4CAF50;
+}
+
+
+input[type="radio"]:checked + label::after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+
+
+.radioStyle{
+    background-color: var(--Green-200-lighter);
 }
 
 .form-checkbox #consent{
@@ -119,3 +173,62 @@ textarea{
     padding: 1em;
 }
 
+.inputStyle{
+    background-color: var(--Green-200-lighter);
+}
+
+input:hover,textarea:hover,.inputStyle:hover{
+    cursor: pointer;
+}
+
+.form-checkbox{
+    cursor: pointer;
+}
+
+button:hover{
+    cursor: pointer;
+}
+.messageAlert{
+    border: 1px solid;
+    max-width: 26em;
+    border-radius: 1em;
+    padding: 0 .9em .9em .9em;
+    position: fixed;
+    margin: auto;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    opacity: .7;
+    background-color: var(--Grey-900-darker);
+    color: var(--White);
+    display: none;
+    
+
+}
+
+.showMessage{
+    display: block;
+}
+.tickImage{
+    display: flex;
+    margin-bottom: .6em;
+    padding-top: .5em;
+}
+
+.tickImage h1{
+    font-size: 1.2rem;
+}
+
+.messageAlert p{
+    font-size: .8rem;
+}
+
+.tickImage img{
+    padding-right: 1em;
+}
+@media (max-width:600px) {
+    .form-row,.form-group-radio{
+        flex-direction: column;
+    }
+}
