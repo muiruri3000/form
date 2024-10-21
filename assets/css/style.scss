@@ -25,6 +25,7 @@ html{
 main{
     height: 100vh;
     background-color: var(--Green-200-lighter);
+    padding: 3em;
     
 }
 
@@ -35,6 +36,11 @@ main{
     max-width: 600px;
     background-color: white;
     border: 1px solid;
+}
+
+.form h1{
+    
+    padding:.5em 0 .3em .5em;
 }
 .form-row{
     display: flex;
@@ -99,61 +105,17 @@ main{
     color: white;
     border: none;
 }
-
-// form{
-//     width: 100%;
-//     max-width: 760px;
-//     margin: auto;
-//     padding: 1em;
-//     border: 1px solid;
-// }
-// fieldset{
-//     border: 2px dashed red;
-// }
-//  .form-group{
+span{
    
-//     margin: .8em 1em;
-//     padding: .5em;
-//     width: 100%;
-//     padding-right: 2em;
-    
-// }
+    margin-top:.2em;
+    color: red;
+    padding: .2em;
+    margin-left:.5em;
+    font-weight: bold;
+   
+}
 
-// .form-row{
-//     display: flex;
-// }
-
-// main form fieldset .form-group input{
-//     margin-top: .6em;
-//     width: 100%;
-//     padding: 1.1em;
-//     border: none;
-//     border-radius: 1em;
-// }
-// .form-radio{
-//     display: flex;
-//     margin: 2em auto;
-//     justify-content: space-between;
-// }
-
-// .radio-group{
-//     margin-left: 3em;
-//     border-radius: .8em;
-//     border: 1px solid;
-//     padding: 1em 3em;
-// }
-
-// .form-group-message{
-//     display: flex;
-//     flex-direction: column;
-// }
-// .form-group-message textarea{
-//     width: 100%;
-//     resize: vertical;
-  
-// }
-// .form-group-message{
-//     width: 100%;
-// }
-
+textarea{
+    padding: 1em;
+}
 
