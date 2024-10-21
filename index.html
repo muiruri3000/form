@@ -9,14 +9,72 @@
   <title>Frontend Mentor | Contact form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
 
-  Contact Us
+
+  <main>
+
+  <h1>Contact Us</h1>   
+
+<form action="">
+
+  <fieldset>
+    <legend>Personal Information </legend>
+
+
+
+    <div class="block">
+      <label for="first-name">First Name:<span>*</span></label>
+      <input type="text" name="fname" id="fname" aria-describedby="first-name">
+    </div>
+
+    
+    <div class="block">
+      <label for="last-name">Last Name:<span>*</span></label>
+      <input type="text" name="lname" id="lname" aria-describedby="last-name">
+    </div>
+
+    <div class="block">
+      <label for="email">First Name:<span>*</span></label>
+      <input type="text" name="email" id="email" aria-describedby="email">
+    </div>
+
+ </fieldset>
+
+<fieldset>
+  <div class="block">
+  <legend>Your Query </legend>
+  <input type="radio" name="radio1" id="radio1">
+  <label for="radio1">General Enquiry</label>
+
+
+  <legend>Your Query </legend>
+  <input type="radio" name="radio2" id="radio2">
+  <label for="radio2">Support Request</label>
+</div>
+</fieldset>
+
+
+<label for="message">Message *</label>
+
+<textarea name="message" id="message"></textarea>
+
+<input type="checkbox" name="consent" id="consent">
+<label for="consent">I consent to being contacted by the team*</label>
+
+
+<div class="submi">
+  <button role="submit">Submit</button>
+</div>
+</form>
+
+</main>
 
   First Name
   This field is required
@@ -44,9 +102,12 @@
   Message Sent!
   Thanks for completing the form. We'll be in touch soon!
   
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
+
+
+  <script src="./assets/js/validation.js"></script>
 </body>
 </html>
