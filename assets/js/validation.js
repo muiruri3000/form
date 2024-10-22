@@ -7,6 +7,12 @@ const consentError  = document.querySelector('#consentError')
 const radioButtons = document.querySelectorAll('input[name="query"]');
 const formGroupRadio = document.querySelectorAll('.radio-group');
 const messageAlert = document.querySelector('.messageAlert'); 
+const fname = document.querySelector('#fname'); 
+const lname = document.querySelector('#lname'); 
+const email = document.querySelector('#email'); 
+const message = document.querySelector('#message'); 
+const enquiry = document.querySelector('#enquiry'); 
+const consent = document.querySelector('#consent'); 
 
 
 
@@ -43,11 +49,21 @@ function handleSubmit(e){
         setTimeout(() => {
             
             messageAlert.classList.add('showMessage');
+
+            document.querySelector('.form').reset();
+            // fname.value='';
+            // lname.value='';
+            // email.value='';
+            // message.value='';
+          
         }, 1000);
         setTimeout(() => {
             
             messageAlert.classList.remove('showMessage');
         }, 2500);
+
+
+
     }else{
         messageAlert.classList.remove('showMessage');
 
